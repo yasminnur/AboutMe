@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Utama from './Components/utama';
+// import { Link } from 'react-router-dom';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from "./Components/nav";
+import Footer from "./Components/footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <hr />
+      <Nav />
+      <Utama />
+      <Footer />
+      
+            {/* <p><Utama /></p> */}
     </div>
   );
 }
-
 export default App;
+
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import Nav from './Components/Nav';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Switch>
+//         <Route exact path="/">
+//           <Nav />
+//         </Route>
+//         <Route exact path="/tentangSaya">
+//           <h1>Tentang Saya</h1>
+//           <p>Ini adalah halaman Tentang Saya.</p>
+//         </Route>
+//       </Switch>
+//     </Router>
+//   );
+// }
+
+// export default App;
