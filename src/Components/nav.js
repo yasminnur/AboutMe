@@ -3,6 +3,7 @@ import TentangSaya from "./tentangSaya";
 import Karya from "./karya";
 import Kontak from "./MyFav";
 import Beranda from "./beranda";
+// import Card from "./Card";
 import Footer from "./footer";
 import "./css/style.css";
 
@@ -24,6 +25,9 @@ function Nav() {
             <li>
               <a href="#karya">Karya</a>
             </li>
+            {/* <li>
+              <a href="#card">Card</a>
+            </li> */}
           </ul>
         </nav>
 
@@ -39,8 +43,9 @@ function Nav() {
         <section id="karya">
           <Karya />
         </section>
+
         <section id="footer">
-        <Footer />
+          <Footer />
         </section>
       </div>
     </>

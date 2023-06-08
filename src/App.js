@@ -1,6 +1,6 @@
 import React from "react";
 import Utama from './Components/utama';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from "./Components/nav";
 import Footer from "./Components/footer";
@@ -12,6 +12,7 @@ function App() {
       <Nav />
       <Utama />
       <Footer />
+      <Link to="/gallery" className="nav-link">Gallery</Link>
       
             {/* <p><Utama /></p> */}
     </div>
